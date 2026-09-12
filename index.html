@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motus 10</title>
+  <meta name="description" content="Un jeu de mots de 10 lettres">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <h1>MOTUS <span>10</span></h1>
+      <p>Trouvez le mot secret de 10 lettres</p>
+    </header>
+
+    <section class="info">
+      <div>
+        <strong id="attempts">0</strong>
+        <small>/ 6 essais</small>
+      </div>
+      <button id="restartBtn" class="restart-btn">↻ Nouvelle partie</button>
+    </section>
+
+    <section id="board" class="board" aria-label="Grille de jeu"></section>
+    <section id="message" class="message" aria-live="polite"></section>
+    <section id="keyboard" class="keyboard" aria-label="Clavier"></section>
+
+    <section class="legend">
+      <div><span class="legend-box correct"></span>Bonne lettre, bonne place</div>
+      <div><span class="legend-box misplaced"></span>Bonne lettre, mauvaise place</div>
+      <div><span class="legend-box absent"></span>Lettre absente</div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
